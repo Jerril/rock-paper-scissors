@@ -5,10 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <!-- Link to Javascript -->
+    <nav>
+        <div class="logo">
+            <span>Rock</span>
+            <span>Paper</span>
+            <span>Scissors</span>
+        </div>
+
+        <p>The first player to reach a score of 5 wins</p>
+    </nav>
+
+    <article>
+        <div class="container">
+            <section class="score-board">
+                <div class="player">
+                    <p>player 1</p>
+                    <p>0</p>
+                </div>
+                <div class="ties">
+                    <p>tie</p>
+                    <p>0</p>
+                </div>
+                <div class="com">
+                    <p>com</p>
+                    <p>0</p>
+                </div>
+            </section>
+
+            <section class="game-area">
+                <div class="player">
+                    <img src="images/none.png" alt="" class="choice-img">
+
+                    <div>
+                        <button class="choice" data-key="rock">
+                            <img src="images/icons/rock.png" alt="" data-key="rock">
+                        </button>
+                        <button class="choice"  data-key="paper">
+                            <img src="images/icons/paper.png" alt="" data-key="paper">
+                        </button>
+                        <button  class="choice" data-key="scissors">
+                            <img src="images/icons/scissors.png" alt="" data-key="scissors">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="commentary">
+                    <p>OUTCOME</p>
+                    <div>
+                        <p></p>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="com">
+                    <img src="images/none.png" alt="" class="choice-img">
+                </div>
+            </section>
+        </div>
+    </article>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    background-color: #000;
+    width: 80px;
+    padding: .6rem .4rem;
+}
+
+nav p {
+    padding-left: .5rem;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.logo span {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.2;
+}
+
+article {
+    margin: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.score-board {
+    display: flex;
+}
+
+.score-board div {
+    flex: 1;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.score-board div p:first-child {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: .8rem;
+}
+
+.game-area {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.game-area .player,
+.game-area .com,
+.game-area .commentary {
+    flex: 1 1 auto;
+    width: 35%;
+    height: auto;
+}
+
+.game-area .player,
+.game-area .com {
+    border: 1px solid #f3f3f3;
+    overflow: hidden;
+}
+
+.game-area .player {
+}
+
+.game-area .com {
+}
+
+.game-area  .choice-img {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    padding: 2rem 0;
+    padding-right: 1.5rem;
+    
+}
+
+.game-area .player .choice-img {
+    
+}
+
+.game-area .com .choice-img {
+    transform: scaleX(-1);
+}
+
+.game-area .commentary {
+    border: none;
+    width: 30%;
+}
+
+.game-area .player div{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: 2rem auto 1rem auto;
+    padding: 0;
+}
+
+.game-area .player div button{
+    flex: 1;
+    cursor: pointer;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: .5rem;
+}
+
+.game-area .player div button:hover{
+    background-color: #f3f3f3;
+}
+
+.game-area .player div button img{
+    width: 100%;
+    height: auto;
+}
+
+.commentary {
+    text-align: center;
+    padding: 1.5rem 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.commentary p:first-child {
+    letter-spacing: 1px;
+}
+
+.commentary div {
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.commentary div p {
+    padding: 1rem 0;
+    font-size: 15px;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.commentary .endgame {
+    font-weight: 500;
+}
+
+.commentary button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: .6rem 1rem;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 800;
+}
